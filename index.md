@@ -4,7 +4,7 @@
 
 ### Category Name 1 
 
-[Project 1 Title](/boston_metrics)
+[Project 1 Title](/boston_metrics.html)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
