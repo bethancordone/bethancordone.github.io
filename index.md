@@ -5,7 +5,7 @@
 ### Category Name 1 
 
 [Identifying Boston Properties with High Energy, Water Use, and GHG Emissions](/boston_metrics.html)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/boston_metrics_image.jpg?raw=true"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
