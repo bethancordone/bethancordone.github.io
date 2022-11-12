@@ -4,15 +4,15 @@
 
 ### Category Name 1 
 
-[Identifying Boston Properties with High Energy Use](/boston_metrics.html)
+[Identifying Boston Properties with High Energy Use](/content/boston_metrics.html)
 <img src="images/boston_metrics_image.jpg?raw=true"/>
 
 ---
-[Exploring Trends in CA Health Insurance Coverage](/Exploring Trends in CA Health Insurance Coverage Using Text Data From Bills.pdf)
+[Exploring Trends in CA Health Insurance Coverage](/content/Exploring Trends in CA Health Insurance Coverage Using Text Data From Bills.pdf)
 <img src="images/california_health_image.jpg?raw=true"/>
 
 ---
-[Predicting Turnover Rate for NYPD](/NYPD_Turnover.html)
+[Predicting Turnover Rate for NYPD](/content/NYPD_Turnover.html)
 <img src="images/nypd_turnover_image.jpg?raw=true"/>
 
 ---
