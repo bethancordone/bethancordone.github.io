@@ -8,8 +8,8 @@
 <img src="images/boston_metrics_image.jpg?raw=true"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Exploring Trends in CA Health Insurance Coverage](/Exploring Trends in CA Health Insurance Coverage Using Text Data From Bills.pdf)
+<img src="images/california_health_image.jpg?raw=true"/>
 
 ---
 [Predicting Turnover Rate for NYPD](/NYPD_Turnover.html)
