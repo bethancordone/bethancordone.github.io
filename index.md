@@ -19,7 +19,9 @@
 
 ### Undergraduate Thesis
 
-- [Project 1 Title](http://example.com/)
+- [Stratospheric Sulfate Aerosol Injection as a
+Climate Change Mitigation Strategy: Effectiveness
+and Feasibility](/content/ThesisFinal.docx.pdf)
 
 ---
 
