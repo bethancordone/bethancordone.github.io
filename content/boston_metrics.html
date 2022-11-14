@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Untitled</title>
+<title>Boston_Metrics_Writeup</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13096,7 +13096,7 @@ div#notebook {
 <h3 id="Data-Cleaning">Data Cleaning<a class="anchor-link" href="#Data-Cleaning">&#182;</a></h3><p>I initially collected and processed the data in excel before imported to SSMS and further cleaning the data using SQL. Each year of reported data is recorded in a separate csv and I added a year column to the files before combining into a dataset with records from multiple years. I initially explored the accuracy of the percentages for energy types and discovered that they did not add up to 100% in over 50% of the dataset. I could not identify a clear source of error, so this data was omitted from the analysis. Additionally, I omitted data with missing entries for the property name and address. I cleaned the property address and property name text data so that the addresses all had the same format of STREET NUMBER STREET NAME St/Rd/ etc. Apt/Unit, etc. I fixed spelling errors and instances in which either only the address or property name was present. I replaced instances of 'not available' with a blank cell for consistency.</p>
 <p>I separated the xlsx files so that the property name and address along with all the reported metrics for each year was in one table. The other table contained all the information for each unique property listed. I used the second table to determine the unique property entries and I was able to condense and standardize the property type and property uses so that the same property with a slightly different description across years was not miss identified as a different property. I also created a column that only contained the street name as it could be used to group the data by location.</p>
 <p>I imported both data tables in Microsoft SQL where I completed additional cleaning steps. Some of the zip codes were missing leading 0's or had zip codes extensions. In addition to the zip code corrections, I made correction to errors in the year-built column. I standardized the text data by making everything uppercase. I found missing values in the Site Energy Intensity and GHG Intensity. I calculated the missing values using the Total Energy, Total GHG Emissions, and the Gross Area. I also used the Gross Area to create a column for the Total Water Use that year.</p>
-<p><a href="https://github.com/bethancordone/bethancordone.github.io/blob/master/boston_energy.sql">SQL SCRIPT</a></p>
+<p><a href="https://github.com/bethancordone/bethancordone.github.io/blob/master/content/boston_energy.sql">SQL SCRIPT</a></p>
 
 </div>
 </div>
@@ -13105,7 +13105,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="SQL-Data-Exploration">SQL Data Exploration<a class="anchor-link" href="#SQL-Data-Exploration">&#182;</a></h3><p>I joined the property information table and the Boston metrics table to create a temp table with the zip code values for each metric. I then found the median and average of each zip code. There are noticeable differences in the median the average between zip codes. I did the same calculation with the streets, years, and property type but also looked at ranges and outliers. I also looked at the average and median of the metrics for the year-built values. I created a categorical variable of year-built ranges of 25 years. I found that the average value for 2017 was much higher than other years. As was the average value for performing arts property type and zip code 02116. This was not the case for the median which indicates an outlier in the data which is influencing the results. It turns out the Wang Theatre located in Tremont St, 02116 used a large amount of energy in 2017 which skews the averages. This could be a error in reporting or specific events at the theatre during that time could have results in such high energy use. Identifying that the average was skewed by outliers, I chose to use the median in the Tableau visualizations as it more accurately represented the typical metrics for each grouping.</p>
-<p><a href="https://github.com/bethancordone/bethancordone.github.io/blob/master/boston_energy.sql">SQL SCRIPT</a></p>
+<p><a href="https://github.com/bethancordone/bethancordone.github.io/blob/master/content/boston_energy.sql">SQL SCRIPT</a></p>
 
 </div>
 </div>
@@ -13126,7 +13126,7 @@ div#notebook {
 <p>For <a href="https://public.tableau.com/app/profile/bethan.cordone/viz/Boston_Metrics/YearTrends#1">WATER INTENSITY</a> the zip codes 02171 and 01239 have the highest median water intensity. Property types with a small total gross area but high median Water Intensity are restaurants and the aquarium. Notably, the energy star scores in the range 75 to 90 perform better in terms of median water intensity use than those with higher energy star scores.</p>
 <p>For <a href="https://public.tableau.com/app/profile/bethan.cordone/viz/Boston_Metrics/YearTrends#1">GHG INTENSITY</a> the same trends observed for energy intensity hold. Notably, office properties had the most power from onsite renewable sources, but these properties did not have the lowest GHG emission intensity. Non refrigerated warehouses and self-storage facilities had onsite renewables but low median GHG emission intensity.</p>
 <p>This analysis created visualizations that identified property types and locations with high energy intensity, water intensity, and GHG emission intensity. Special focus was given to property types with high energy and GHG emissions intensity and small total gross area. These may be establishments that are overlooked for energy efficiency updates as their total gross area is insignificant compared to office buildings, hotels, and multifamily housing. Further analysis on data relating to energy use within these different property type could aid official in developing plans to mitigate this energy use and reduce GHG Intensity Emissions. It should be notable that K12 school contributed a large amount of total gross area but had low median energy intensity and GHG emissions. Analyzing more details energy use data from these properties could give insights into strategies that could be utilized in property with similar functions.</p>
-<p><a href="https://github.com/bethancordone/bethancordone.github.io/blob/master/boston_energy.sql">SQL SCRIPT</a>
+<p><a href="https://github.com/bethancordone/bethancordone.github.io/blob/master/content/boston_energy.sql">SQL SCRIPT</a>
 <a href="https://public.tableau.com/app/profile/bethan.cordone/viz/Boston_Metrics/YearTrends">TABLEAU DASHBOARD</a></p>
 
 </div>
