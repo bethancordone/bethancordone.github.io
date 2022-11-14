@@ -19,7 +19,7 @@
 
 ### Undergraduate Thesis
 
-- [Stratospheric Sulfate Aerosol Injection as a
+[Stratospheric Sulfate Aerosol Injection as a
 Climate Change Mitigation Strategy: Effectiveness
 and Feasibility](/content/ThesisFinal.docx.pdf)
 
@@ -27,6 +27,6 @@ and Feasibility](/content/ThesisFinal.docx.pdf)
 
 ### Research Paper
 
-- [Project 2 Title](http://example.com/)
+[Scaling Laws for Mitotic Chromosomes](https://www.frontiersin.org/articles/10.3389/fcell.2021.684278/full)
 
 ---
