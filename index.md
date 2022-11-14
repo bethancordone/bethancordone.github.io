@@ -2,7 +2,7 @@
 
 ---
 
-### Category Name 1 
+### Data Analytics Projects
 
 [Identifying Boston Properties with High Energy Use](/content/boston_metrics.html)
 <img src="images/boston_metrics_image.jpg?raw=true"/>
@@ -17,17 +17,14 @@
 
 ---
 
-### Category Name 2
+### Undergraduate Thesis
 
 - [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
 
 ---
 
+### Research Paper
 
-
+- [Project 2 Title](http://example.com/)
 
 ---
