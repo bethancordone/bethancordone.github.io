@@ -25,7 +25,7 @@ and Feasibility](/content/ThesisFinal.docx.pdf)
 
 ---
 
-### Research Paper
+### Published Works
 
 [Scaling Laws for Mitotic Chromosomes](https://www.frontiersin.org/articles/10.3389/fcell.2021.684278/full)
 
